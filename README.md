@@ -14,10 +14,8 @@ import (
 
 func main() {
 	//suc
-	var link baidu_netdisk_sharelink_check.ShareLink = "https://pan.baidu.com/s/1D_vNhmirNjGC3gkdxwGPYw"
-	log.Println(link.Check())
+	log.Println(baidu_netdisk_sharelink_check.ShareLink("https://pan.baidu.com/s/1D_vNhmirNjGC3gkdxwGPYw").Check())
 	//fail
-	var link2 baidu_netdisk_sharelink_check.ShareLink = "https://pan.baidu.com/s/1bQRjzr8x7XvKj8L3_iv9xw"
-	log.Println(link2.Check())
+	log.Println(baidu_netdisk_sharelink_check.ShareLink("https://pan.baidu.com/s/1bQRjzr8x7XvKj8L3_iv9xw").Check())
 }
 ```
